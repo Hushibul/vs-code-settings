@@ -1,0 +1,250 @@
+{
+  "editor.mouseWheelZoom": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.suggestSelection": "first",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+
+  "workbench.iconTheme": "material-icon-theme",
+
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.tslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      // Python Syntax Highlighting
+      {
+        "scope": [
+          "comment.line.number-sign.python",
+          "comment.line.double-slash.js"
+        ],
+        "settings": { "foreground": "#808080" }
+      },
+      {
+        "scope": [
+          "storage.type.function.python",
+          "keyword.control.flow.python",
+          "keyword.control.import.python"
+        ],
+        "settings": { "foreground": "#0098CF" }
+      },
+      {
+        "scope": [
+          "entity.name.function.python",
+          "support.type.property-name.json"
+        ],
+        "settings": { "foreground": "#EC3479" }
+      },
+      {
+        "scope": [
+          "variable.parameter.function.language.python",
+          "entity.name.namespace",
+          "variable.other.property",
+          "parameter"
+        ],
+        "settings": { "foreground": "#FFFFFF" }
+      },
+      {
+        "scope": ["constant.numeric"],
+        "settings": { "foreground": "#E43375" }
+      },
+      {
+        "scope": ["support.function.builtin.python"],
+        "settings": { "foreground": "#F5922F" }
+      },
+      {
+        "scope": [
+          "string.quoted.docstring.multi.python",
+          "string.quoted.single.python",
+          "string.quoted.double.json.comments"
+        ],
+        "settings": { "foreground": "#00A37E" }
+      },
+
+      // JavaScript Syntax Highlighting
+      {
+        "scope": ["comment.line.double-slash.js"],
+        "settings": { "foreground": "#808080" } // Color for single-line comments
+      },
+      {
+        "scope": [
+          "storage.type.function.js",
+          "keyword.control.flow.js",
+          "keyword.control.import.js",
+          "keyword.operator"
+        ],
+        "settings": { "foreground": "#0098CF" } // Color for function, flow, import keywords, operators
+      },
+      {
+        "scope": ["entity.name.function.js", "support.type.property-name.json"],
+        "settings": { "foreground": "#EC3479" } // Color for function names and JSON properties
+      },
+      {
+        "scope": [
+          "variable.parameter.function.js",
+          "variable.other.property.js",
+          "parameter"
+        ],
+        "settings": { "foreground": "#FFFFFF" } // Color for function parameters and object properties
+      },
+      {
+        "scope": ["constant.numeric"],
+        "settings": { "foreground": "#E43375" } // Color for numeric constants
+      },
+      {
+        "scope": ["support.function.builtin.js"],
+        "settings": { "foreground": "#F5922F" } // Color for built-in functions like console.log
+      },
+      {
+        "scope": [
+          "string.quoted.single.js",
+          "string.quoted.double.js",
+          "string.template.js"
+        ],
+        "settings": { "foreground": "#00A37E" } // Color for strings and template literals
+      },
+      {
+        "scope": ["meta.function-call.js", "entity.name.function.js"],
+        "settings": { "foreground": "#EC3479" } // Function names and calls
+      },
+      {
+        "scope": ["variable.other.property.js"],
+        "settings": { "foreground": "#af8600" } // Property names
+      },
+
+      // TypeScript Syntax Highlighting
+      {
+        "scope": ["comment.line.double-slash.ts"],
+        "settings": { "foreground": "#808080" } // Color for single-line comments
+      },
+      {
+        "scope": [
+          "storage.type.function.ts",
+          "keyword.control.flow.ts",
+          "keyword.control.import.ts",
+          "keyword.operator.ts"
+        ],
+        "settings": { "foreground": "#0098CF" } // Color for function, flow, import keywords, operators
+      },
+      {
+        "scope": ["entity.name.function.ts", "support.type.property-name.json"],
+        "settings": { "foreground": "#EC3479" } // Color for function names and JSON properties
+      },
+      {
+        "scope": [
+          "variable.parameter.function.ts",
+          "variable.other.property.ts",
+          "parameter.ts"
+        ],
+        "settings": { "foreground": "#FFFFFF" } // Color for function parameters and object properties
+      },
+      {
+        "scope": ["constant.numeric.ts"],
+        "settings": { "foreground": "#E43375" } // Color for numeric constants
+      },
+      {
+        "scope": ["support.function.builtin.ts"],
+        "settings": { "foreground": "#F5922F" } // Color for built-in functions
+      },
+      {
+        "scope": [
+          "string.quoted.single.ts",
+          "string.quoted.double.ts",
+          "string.template.ts"
+        ],
+        "settings": { "foreground": "#00A37E" } // Color for strings and template literals
+      }
+    ]
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "function": "#FFFFFF",
+      "function.builtin": "#F5922F",
+      "function.declaration": "#EC3479",
+      "parameter": "#FFFFFF",
+      "parameter.declaration": "#FFFFFF",
+      "variable": "#FFFFFF",
+      "class": "#F5922F"
+    }
+  },
+  "workbench.colorCustomizations": {
+    "editor.background": "#1C1E26", // Dark, muted blue-gray for background
+    "editor.foreground": "#E5E9F0", // Soft white for text
+    "notebook.cellEditorBackground": "#232530", // Slightly darker background for cells
+    "notebook.focusedCellBackground": "#2E313D", // Darkened gray-blue for focused cells
+    "editorLineNumber.foreground": "#4B5263", // Soft gray for line numbers
+    "editorCursor.foreground": "#8FBCBB", // Cool cyan cursor for visibility
+    "editor.selectionBackground": "#3B4252", // Dark blue-gray for selection
+    "editorLineHighlightBackground": "#2C313A" // Gentle highlight with subtle contrast
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  // cursor
+  "editor.cursorBlinking": "blink",
+  "git.autofetch": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "window.commandCenter": true,
+
+  "explorer.confirmDragAndDrop": false,
+
+  //code runner
+  "code-runner.executorMap": {
+    "python": "python3 -u"
+  },
+  //terminal
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.env.windows": {},
+  "terminal.integrated.env.linux": {},
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "workbench.editorAssociations": {
+    "*.pdf": "default"
+  },
+
+  "html.format.preserveNewLines": false,
+  "notebook.formatOnSave.enabled": true,
+  "cSpell.userWords": ["Hushibul"],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.formatOnPaste": true,
+  "git.suggestSmartCommit": false,
+  // "editor.formatOnSave": true,
+  // "html.format.indentInnerHtml": true,
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.formatOnSave": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.largeFileOptimizations": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.productIconTheme": "developer-icons",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.colorTheme": "Visual Studio Dark"
+}
